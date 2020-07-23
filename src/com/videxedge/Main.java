@@ -57,22 +57,6 @@ public class Main {
             passNum = input.nextInt();
 
         }
-        boolean found = false;
-        System.out.println("Enter number (3 digits):");
-        num = input.nextInt();
-        while(num>=100&& !found) {
-            dig1 = num%10;
-            dig2 = (num/10)%10;
-            dig3 = (num/100)%10;
-            if(dig2>dig1&&dig2>dig3) {
-                found = true;
-            }
-            num = num/10;
-        }
-        if(found)
-            System.out.println("Hill number");
-        else
-            System.out.println("Not hill number");
     }
 
 public static void main(String[] args) {
